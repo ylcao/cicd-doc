@@ -39,7 +39,7 @@ Helm验证(helm version)：
 
 在K8S主节点中下载GitLab helm：
 ```
-wget https://github.com/ylcao/CICD/blob/master/helm/jenkins.tar.gz
+curl -OL https://raw.githubusercontent.com/ylcao/CICD/master/helm/jenkins.tar.gz
 tar zxf jenkins.tar.gz
 ```
 配置jenkins helm 主values.yaml;根据环境情况，主要修改配置如下(其他根据实际需求进行修改)：
