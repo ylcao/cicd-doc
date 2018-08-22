@@ -24,7 +24,7 @@ Login Succeeded
 登陆到K8S主节点中，安装helm
 
 ```
-Wget https://kubernetes-helm.storage.googleapis.com/helm-v2.8.2-linux-amd64.tar.gz
+curl -OL https://kubernetes-helm.storage.googleapis.com/helm-v2.8.2-linux-amd64.tar.gz
 tar zxf helm-v2.8.2-linux-amd64.tar.gz
 cd linux-amd64/
 cp -rf helm /usr/local/bin/
@@ -39,7 +39,7 @@ Helm验证(helm version)：
 
 在K8S主节点中下载GitLab helm：
 ```
-wget https://github.com/ylcao/CICD/blob/master/helm/jenkins.tar.gz
+curl -OL https://raw.githubusercontent.com/ylcao/CICD/master/helm/jenkins.tar.gz
 tar zxf jenkins.tar.gz
 ```
 配置jenkins helm 主values.yaml;根据环境情况，主要修改配置如下(其他根据实际需求进行修改)：
