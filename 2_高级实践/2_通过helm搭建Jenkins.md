@@ -53,7 +53,7 @@ Master:
   ImagePullPolicy: "Always"
 # ImagePullSecret: jenkins
   Component: "jenkins-master"
-  UseSecurity: true
+  UseSecurity: false
   AdminUser: admin
   # AdminPassword: <defaults to random>
   AdminPassword: "admin"
